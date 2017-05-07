@@ -1,0 +1,431 @@
+<!-- roomInfo -->
+<html>
+	<head>
+		<title>eLax民宿</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- META 的功能僅是用來註明這些網頁資訊，且提供給瀏覽器或是搜尋引擎，並非是要給寫給瀏覽網頁的＂人＂看的內容。-->
+        
+		<!-- 設計自己blog的瀏覽器網址icon圖示 -->
+		<link rel = "Shortcut Icon" type = "image/x-icon" href = "customer_picture/icon.ico" />
+      
+		<!-- 加載Bootstrap --> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- 加載css、js -->
+		<link rel="stylesheet" type="text/css" href="customer_frame_css.css">
+		<script src="customer_frame_js.js"></script>
+		
+		<!-- 加入以下css即可修改最上面背景圖片 -->
+		<!-- 務必要加在載入customer_frame_css.css之後才可以覆蓋掉-->	
+		<style type = "text/css">
+			.jumbotron{
+				/*background-color: white; */
+				background-image: url('customer_picture/homepage3.jpg');	/* 最上面的背景 在此修改圖片* //* 建議大小為2200*700 */
+				background-repeat:no-repeat;
+				opacity: 0.8;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				padding-left: 3%;
+				/*color: #2e2d4d;*/
+				height: 70%;
+				background-size: cover;
+				text-align: center;	/*字體水平置中*/
+				vertical-align: middle;/*nouse*/
+				/*line-height: 70%;*/
+			}
+		</style>
+		
+		<style type = "text/css">
+		/*Table title*/	
+			.textCss2{
+				text-shadow:1px 1px 1px rgba(138,138,138,1);
+				font-weight:bold;
+				font-variant:small-caps;
+				color:white;
+				letter-spacing:5pt;
+				word-spacing:2pt;
+				font-size:20pt;
+				
+			}
+		/*RoomTitle:relax*/
+			.textCss3{
+				text-shadow:1px 1px 1px rgba(138,138,138,1);
+				font-weight:bold;
+				font-variant:small-caps;
+				color:#444444;
+				letter-spacing:5pt;
+				word-spacing:2pt;
+				font-size:18pt;
+				
+			}
+		/*Title*/
+			.textCss4{
+				text-shadow:1px 1px 1px rgba(138,138,138,1);
+				font-weight:bold;
+				//font-variant:small-caps;
+				color:#444444;
+				letter-spacing:-3pt;
+				word-spacing:0pt;
+				font-size:3em;
+				font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
+			}
+		/*Introduce*/
+			.textCss5{
+				text-shadow:1px 1px 1px rgba(138,138,138,1);
+				color:#666666;
+				letter-spacing:5pt;
+				word-spacing:2pt;
+				line-height:50px;
+				//font-size:18px;
+			}
+		/*RoomTitle:roomname*/
+			.textCss6{
+				text-shadow:1px 1px 1px rgba(138,138,138,1);
+				font-weight:bold;
+				font-variant:small-caps;
+				color:#444444;
+				//letter-spacing:5pt;
+				word-spacing:2pt;
+				font-size:16pt;
+				
+			}
+		/*Button*/		
+			.css_btn_class {
+				font-size:16px;
+				font-family:Arial;
+				font-weight:bold;
+				-moz-border-radius:42px;
+				-webkit-border-radius:42px;
+				border-radius:42px;
+				border:1px solid #84bbf3;
+				padding:12px 13px;
+				text-decoration:none;
+				background:-moz-linear-gradient( center top, #bddbfa 54%, #80b5ea 51% );
+				background:-ms-linear-gradient( top, #bddbfa 54%, #80b5ea 51% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea');
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(54%, #bddbfa), color-stop(51%, #80b5ea) );
+				background-color:#bddbfa;
+				color:#ffffff;
+				display:inline-block;
+				text-shadow:1px 1px 0px #528ecc;
+				-webkit-box-shadow: 1px 1px 14px 7px #dcecfb;
+				-moz-box-shadow: 1px 1px 14px 7px #dcecfb;
+				box-shadow: 1px 1px 14px 7px #dcecfb;
+			}
+			.css_btn_class:hover {
+				background:-moz-linear-gradient( center top, #80b5ea 54%, #bddbfa 51% );
+				background:-ms-linear-gradient( top, #80b5ea 54%, #bddbfa 51% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa');
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(54%, #80b5ea), color-stop(51%, #bddbfa) );
+				background-color:#80b5ea;
+			}
+			.css_btn_class:active {
+				position:relative;
+				top:1px;
+			}
+		
+			
+		</style>
+		
+		<script>
+			$(function(){
+				$("#myCarousel").carousel({
+					interval: 3000
+				})
+			});
+		</script>
+		
+	</head>
+	<body>
+	<div class="container-fluid">
+	<div class="row content">
+		<div class="col-md-12 center">
+	<!--轮播 start-->
+		
+		<div id="myCarousel" class="carousel slide" style="height:80%">
+			<div class="carousel-caption">
+				<div class="textCss titleCenter">
+					<h1>Re<br>Lax</h1>
+					<h6>Homestay in Hualien</h6>
+				</div>
+			</div>
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" 
+					class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+				<li data-target="#myCarousel" data-slide-to="6"></li>
+				<li data-target="#myCarousel" data-slide-to="7"></li>
+				<li data-target="#myCarousel" data-slide-to="8"></li>
+				<li data-target="#myCarousel" data-slide-to="9"></li>
+				<li data-target="#myCarousel" data-slide-to="10"></li>
+				<li data-target="#myCarousel" data-slide-to="11"></li>
+				<li data-target="#myCarousel" data-slide-to="12"></li>
+				<li data-target="#myCarousel" data-slide-to="13"></li>
+				<li data-target="#myCarousel" data-slide-to="14"></li>
+				<li data-target="#myCarousel" data-slide-to="15"><li>
+				<li data-target="#myCarousel" data-slide-to="16"></li>
+				<li data-target="#myCarousel" data-slide-to="17"></li>
+			</ol>   
+			<!-- 轮播（Carousel）项目 --><!-- picture size : 2200*700-->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="roomInfo_picture/smallRoom1.jpg" alt="First slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom2.jpg" alt="Second slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom3.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom4.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom5.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom6.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/smallRoom7.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom1.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom2.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom3.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom4.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom5.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom6.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom7.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom8.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom9.jpg" alt="Third slide" style="height:100%">
+				</div>
+				<div class="item">
+					<img src="roomInfo_picture/BigRoom10.jpg" alt="Third slide" style="height:100%">
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div> 
+	<!--轮播end-->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="customerHomepage.html">放輕鬆民宿</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="houseInfo.html">民宿資訊</a></li>
+							<li class="active"><a href="#">房間資訊</a></li>
+							<li><a href="bookRoom.html">我要訂房</a></li>
+							<li><a href="checkBookInfo.html">查看訂單</a></li>
+							<li><a href="surround.html">附近導覽</a></li>
+							<li><a href="customerComment.php">使用者評論</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="row-md-8 center">
+<!-- ======================================================================================================================================================= -->
+			<br>	
+			<!--標題-->
+				<center>
+				<div style = "width:90%; text-align:center;" class="textCss4">
+						
+					ReLax Homestay Room
+				</div>
+				</center>
+				
+			<!--介紹文-->
+				<center>
+				<div style = "width:90%; text-align:center;" class="textCss5">
+					四間不同主題的雙人套房，每間房間都設有對外窗及獨立衛浴<br>
+					且本民宿設有電梯若有行動不便．年長者隨行的朋友歡迎來住<br>
+					讓每位入住的旅客都可以放鬆地享受悠閒的假期！<br>
+				</div>
+				
+			<!--一條線-->	
+				<p style = "width:90%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>
+				 
+				<br>
+				<br>
+				<center>
+					<div style=" padding:0 5% 0px 5%; width:70%"> 
+					<!-- 房價資訊 -->
+						<table class="table table-hover" style="border:4px #56494e solid; " rules="all">
+							<thead>
+								<tr bgcolor="#56494e" class="textCss2">
+									<th scope="row" colspan="2" style="text-align:center"><span style="color:#FFFFFF;">房價資訊</span></th>						
+								</tr>
+						
+						<tr bgcolor="#a29c9b">
+									<th scope="row" style="text-align:center;">房型</th>
+									<th style="text-align:center;">房價</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr onclick="location.href='#BigRoom1'">
+									<td scope="row" style="text-align:center;">Relax-大型雙人房1</td>
+									<td style="text-align:right;">2000</td>
+								</tr>
+								<tr bgcolor="#eaeaea" onclick="location.href='#BigRoom2'">
+									<td scope="row" style="text-align:center;">Relax-大型雙人房2</td>
+									<td style="text-align:right;">2000</td>
+								</tr>
+								<tr onclick="location.href='#SmallRoom1'">
+									<td scope="row" style="text-align:center;">Relax-小型雙人房1</td>
+									<td style="text-align:right;">1800</td>
+								</tr>
+								<tr bgcolor="#eaeaea" onclick="location.href='#SmallRoom2'">
+									<td scope="row" style="text-align:center;">Relax-小型雙人房2</td>
+									<td style="text-align:right;">1800</td>
+								</tr>			
+							</tbody>
+						</table>
+					</div>
+				</center>
+				<center>
+				<p style = "width:90%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>				
+				
+				<center>
+				<!-- 房間設備 -->
+				<div><font size="5" color="#3f3f3f"><font><strong>房間設備</strong></font></font></div>
+				<div>
+					<br>
+					冷氣：分離式<br>					
+					<span style="line-height:0.1;">
+					<br>
+					</span>
+					浴廁：基本的盥洗用品，獨立衛浴[<span style="color:#0066FF;">大型: 乾濕分離</span>]<br>
+					<span style="line-height:0.1;">
+					<br>
+					</span>
+					房間：可入住2位成人，雙人床鋪[<span style="color:#0066FF;">大型: 加大</span>]，對外窗<br>
+					<span style="line-height:0.1;">
+					<br>
+					</span>
+					每個房間均提供：42吋液晶電視、第四台有線頻道、衣櫃、Wifi<br>
+					<br>
+					◆ 房價並不包含早午餐<br>
+					<span style="line-height:0.1;">
+					<br>
+					</span>
+					◆ 入住時間：15:00~22:00<br>	
+					<span style="line-height:0.1;">
+					<br>
+					</span>
+					◆ 退房 : 請於11:00前完成退房<br>
+				</div>
+				
+				<br>
+				
+				<div><font size="5" color="#3f3f3f"><font><strong>公共設備 : </strong></font></font>飲水機、冰箱
+				</div>					
+				</center>
+				
+				<br>
+				<center>
+			<!--一條線-->	
+				<p id="BigRoom1" style= "width:70%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>
+				 
+				<br>
+				<br>
+			<!-- BigRoom1 -->	
+				<center>
+				<div >
+					<span class="textCss3">Relax</span><span class="textCss6">-大型雙人房1</span><br>
+					<iframe src="http://www.gigapan.com/gigapans/193824/snapshots/520404,520403,520295,520199,520198,520195/options/hidetitle,showcaptions/iframe/flash.html" frameborder="0" height="335" scrolling="no" width="70%"></iframe>
+				</div>
+				</center>
+				
+				<br>
+				<center>
+			<!--一條線-->	
+				<p id="BigRoom2" style= "width:70%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>
+				 
+				<br>
+				<br>
+				
+			<!-- BigRoom2 -->		
+				<center>
+				<div>
+					<span class="textCss3">Relax</span><span class="textCss6">-大型雙人房2</span><br>
+					<iframe src="http://www.gigapan.com/gigapans/193826/snapshots/520428,520393,520301,520298,520297,520296/options/hidetitle,showcaptions/iframe/flash.html" frameborder="0" height="335" scrolling="no" width="70%"></iframe>				
+				</div>
+				</center>
+				
+				<br>
+				<center>
+			<!--一條線-->	
+				<p id="SmallRoom1" style= "width:70%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>
+				 
+				<br>
+				<br>
+				
+			<!-- SmallRoom1 -->		
+				<center>
+				<div>
+					<span class="textCss3">Relax</span><span class="textCss6">-小型雙人房1</span><br>
+					<iframe src="http://www.gigapan.com/gigapans/193827/snapshots/520398,520397,520396,520394/options/hidetitle,showcaptions/iframe/flash.html" frameborder="0" height="335" scrolling="no" width="70%"></iframe>
+				</div>
+				</center>
+				
+				<br>
+				<center>
+			<!--一條線-->	
+				<p id="SmallRoom2" style= "width:70%; background-color:#DDDDDD; height:1px;"></p>	
+				</center>
+				 
+				<br>
+				<br>
+				
+			<!-- SmallRoom2 -->		
+				<center>
+				<div>
+					<span class="textCss3">Relax</span><span class="textCss6">-小型雙人房2</span><br>
+					<iframe src="http://www.gigapan.com/gigapans/193828/snapshots/520402,520401,520400,520399/options/hidetitle,showcaptions/iframe/flash.html" frameborder="0" height="335" scrolling="no" width="70%"></iframe>
+				</div>
+				</center>
+<!-- ======================================================================================================================================================= -->					
+			</div>
+		</div>
+	</body>
+</html>

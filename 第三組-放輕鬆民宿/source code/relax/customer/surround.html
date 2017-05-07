@@ -1,0 +1,181 @@
+<!-- surround -->
+<html>
+	<head>
+		<title>eLax民宿</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- META 的功能僅是用來註明這些網頁資訊，且提供給瀏覽器或是搜尋引擎，並非是要給寫給瀏覽網頁的＂人＂看的內容。-->
+        
+		<!-- 設計自己blog的瀏覽器網址icon圖示 -->
+		<link rel = "Shortcut Icon" type = "image/x-icon" href = "customer_picture/icon.ico" />
+      
+		<!-- 加載Bootstrap --> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- 加載css、js -->
+		<link rel="stylesheet" type="text/css" href="customer_frame_css.css">
+		<script src="customer_frame_js.js"></script>
+		
+		<!-- 加入以下css即可修改最上面背景圖片 -->
+		<!-- 務必要加在載入customer_frame_css.css之後才可以覆蓋掉-->	
+		<style type = "text/css">
+			.jumbotron{
+				/*background-color: white; */
+				background-image: url('customer_picture/homepage3.jpg');	/* 最上面的背景 在此修改圖片* //* 建議大小為828x315 */
+				background-repeat:no-repeat;
+				opacity: 0.8;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				padding-left: 3%;
+				/*color: #2e2d4d;*/
+				height: 70%;
+				background-size: cover;
+				text-align: center;	/*字體水平置中*/
+				vertical-align: middle;/*nouse*/
+				/*line-height: 70%;*/
+			}
+			p1 {
+				width:100%;
+				max-width:500px;
+				line-height:1.5;
+				margin:0em 0;
+				text-align:justify;
+				padding:5px;
+				/*多行文字限制*/
+				display: -webkit-box;  
+				overflow:hidden;
+				text-overflow : ellipsis;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
+		</style>
+		
+		<script>
+			
+		</script>
+	</head>
+	<body>
+	<div class="container-fluid">
+	<div class="row content">
+		<div class="jumbotron wrapper">
+			<div class="textCss titleCenter">
+				<h1>Re<br>Lax</h1>
+				<h6>Homestay in Hualien</h6>
+			</div>
+		</div>
+		<div class="col-md-12 center">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="customerHomepage.html">放輕鬆民宿</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="houseInfo.html">民宿資訊</a></li>
+							<li><a href="roomInfo.html">房間資訊</a></li>
+							<li><a href="bookRoom.html">我要訂房</a></li>
+							<li><a href="checkBookInfo.html">查看訂單</a></li>
+							<li class="active"><a href="#">附近導覽</a></li>
+							<li><a href="customerComment.php">使用者評論</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="row-md-8 center">
+<!-- ======================================================================================================================================================= -->
+			<br><center><table class="table table-hover" style="border:4px lightblue solid;width:90%;"rules="all">
+							<thead bgcolor="lightblue">
+								<tr>
+									<th  colspan="2">附近景點地圖查詢</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr onclick="location.href='surround1.html'">
+									<td><img src = "customer_picture\surround1-1.jpg" class="img-thumbnail" style=" width:200px; height:150px;" ></img></td>
+									<td><p1>◆初英親水生態公園<br>
+									位於長約1.6公里的初英山自行車道上，內設有生態池
+									、小橋流水、水車涼亭，還有兒童遊憩設施供親子遊玩，周圍樟樹、落羽松樹
+									林立，結合牧場、田園景緻、青青綠地以及潺潺的流水都是初英生態親水公園
+									的魅力所在，尤其在秋季時，落羽松紅褐色的針葉頓時讓人有如詩如畫的感覺，
+									放眼如畫的秀麗風光，大口呼吸這屬於鄉村獨有的新鮮空氣，享受芬多精的擁抱
+									，煩惱似乎也隨之消逝，路過的遊客不妨停下來，感受一下這片迷人的自然風光。</p1></td>
+								</tr>
+								<tr onclick="location.href='surround2.html'">
+									<td><img src = "customer_picture\surround2-1.jpg" class="img-thumbnail" style="width:200px; height:150px;" ></td>
+									<td><p1>◆知卡宣森林公園<br>
+									知卡宣森林公園位於花蓮縣吉安鄉，原名為南埔綠森林公園，占地約為11公頃
+									，在日治時代曾是空軍基地，這幾年經過政府重新規畫整修，種植了多樣的樹
+									苗植物，成為了一座休閒與生態教育的多功能休憩公園，知卡宣公園主要以童
+									話式的設計風格為主，總共分為8項重點，分別為一進門的中央廣場、風向儀廣
+									場、以及綠色地帶的原生植物園區、水生植物園區、龍骨溫室，再來就是最適
+									合小朋友的趣味蜻蜓塑像、兒童遊樂區、花園迷宮。廣大的森林園區是假日親子
+									童的最佳休憩場所。若是喜愛騎單車，也可以帶著自己的鐵馬來此自由自在地騎
+									乘，享受徐徐微風，體驗只有在童話故事中才見的到的各種場景。</p1>
+									</td>
+									
+								</tr>
+								<tr onclick="location.href='surround3.html'">
+									<td><img src = "customer_picture\surround3-1.jpg" class="img-thumbnail" style="width:200px; height:150px;" ></td>
+									<td><p1>◆吉安慶修院<br>
+									花蓮的三級古蹟吉安慶修院，由日治時期建造，是唯一保存完好的日式寺院，
+									前身是日本真言宗高野派「吉野布教所」，除了是日治時期移民過來的日本人
+									最主要的信仰中心外，更具備醫療所、課堂室以及喪葬法事服務處等各式功能
+									。寺內所供奉的主神有弘法大師、不動明王以及毘沙門天王，慶修院建築主體
+									遵循日本傳統建造，以木頭構架為主，屋頂為日本式四注攬尖，最為特別的是
+									四角銅板形式的「寶形造」屋面，以及中開房間向後延伸的「布教壇」。庭院
+									內草木茂盛，生機勃勃，環境幽靜，充滿了禪意。	</p1>																
+									</td>
+								</tr>
+								<tr onclick="location.href='surround4.html'">
+									<td><img src = "customer_picture\surround4-1.jpg" class="img-thumbnail" style="width:200px; height:150px;" ></td>
+									<td><p1>◆楓林步道觀景台<br>
+									福興村大山的「楓林步道」，是由花蓮縣吉安鄉公所多年用心開發出來的休閒景點
+									，全長約為3.4公里，沿途種植了各種花卉，春天一到，杜鵑、梅花、桃花相繼盛開
+									，繽紛美麗，平時花丁子、馬櫻丹等植物相互爭豔，到了秋季，漫步在楓葉林中有
+									如置身於詩畫之中，將令人難以忘懷，站在步道上，可遠眺如棋盤式阡陌縱橫的吉
+									安鄉風景，更可俯瞰整個花蓮平原及海岸山脈北側，視野相當遼闊，沿著蜿蜒的道
+									路緩緩前進，不但可以欣賞到明媚風光，更可以享受森林浴、吸收芬多精，真是人
+									生一大享受，到了夜晚不但可以仰望群星，更可以俯瞰萬家燈火，美得令人迷醉。</p1>
+									</td>
+								</tr>
+								<tr onclick="location.href='surround5.html'">
+									<td><img src = "customer_picture\surround5-1.jpg" class="img-thumbnail" style="width:200px; height:150px;" ></td>
+									<td><p1>◆蓮城蓮花園<br>
+									蓮城蓮花園位於花蓮縣吉安鄉南華村的山腳下，園區栽種面積約一公頃，灌溉用水取自奇
+									萊山之天然水，由木瓜溪引進，質清澈純淨，全年水溫在二十度以下，非常適合蓮花生長
+									，園內種有多達六十多種不同品種的蓮花、十六種荷花及七十多種水生植物，全年蓮花爭
+									奇鬥艷，滿園飄香，美不勝收。
+									園區規劃為蓮花區、王蓮區、荷花區、水生植物區、觀音蓮區及夜晚開花的蓮花區等，花園主
+									要以研發品種、開發相關品種為主，以公園的方式經營，不需門票，免費招待蓮花茶，遊客如
+									有需要，也會為遊客作蓮花生態介紹，適合全家大小來這裡賞花聞香。</p1>
+									</td>									
+								</tr>
+								<tr onclick="location.href='surround6.html'">
+									<td><img src = "customer_picture\surround6-1.jpg" class="img-thumbnail" style="width:200px; height:150px;" ></td>
+									<td><p1>◆嘉德萱草花田<br>
+									嘉德農業資材行於民國70年由曾永坤先生創立，成立初期以銷售農藥為主，其後加入肥料
+									，飼料，農具販售，於民國100年獲得花蓮區農業改良場技術授權，開始繁殖萱草花蓮1號
+									，今已繁殖成功，種苗可上市販售。嘉德農業資材行嚴選生機栽培有機肥及品質較好的產
+									品販售，曾永坤先生以自身種植實驗，協助農友以更好的種植技術增加收益，亦期盼未來
+									可培育更多新品種花卉，讓各地的人都能欣賞到不一樣的農業之美。</p1>
+									</td>								
+								</tr>
+							</tbody>
+						</table></center>				
+		
+					
+
+<!-- ======================================================================================================================================================= -->					
+			</div>
+		</div>
+	</body>
+</html>

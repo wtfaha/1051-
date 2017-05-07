@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 微軟正黑體;
+}
+.sidenav {
+	background-color: white;
+}
+.center {
+	height: 100%;
+	background-color: white;
+}
+.row.content {height: 100%;}
+.jumbotron{
+	/*background-color: white; */
+	background-image: url('customer_picture/homepage5.jpg');	/*最上面的背景*/
+	background-repeat:no-repeat;
+	opacity: 0.8;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding-left: 3%;
+	/*color: #2e2d4d;*/
+	height: 70%;
+	background-size: cover;
+	text-align: center;	/*字體水平置中*/
+	vertical-align: middle;/*nouse*/
+	/*line-height: 70%;*/
+}
+.wrapper {
+  height: 70%;
+  text-align: center;
+}
+.wrapper:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.titleCenter {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.textCss{
+	text-shadow:1px 1px 1px rgba(138,138,138,1);
+	font-weight:bold;
+	font-variant:small-caps;
+	color:white;
+	letter-spacing:5pt;
+	word-spacing:2pt;
+	font-size:3em;
+	font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
+}
+.navbar-default {
+  background-color: #56494e;
+  border-color: #443a3e;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecf0f1;
+  background-color: #443a3e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecf0f1;
+  background-color: #443a3e;
+}
+.navbar-default .navbar-toggle {
+  border-color: #443a3e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #443a3e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecf0f1;
+    background-color: #443a3e;
+  }
+}
+.btn-default {
+    background: #56494e;
+    color: #ffffff;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background: #443a3e;
+    color: #ffffff;
+}
+ 
+.btn-default:active, .btn-default.active {
+    background: #443a3e;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+#loginFail {
+	color: red;
+}
+
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+
+
+.panel-primary > .panel-heading {
+  background-color: #2e2d4d;
+}

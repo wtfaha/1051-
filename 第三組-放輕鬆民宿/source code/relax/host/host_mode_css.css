@@ -1,0 +1,39 @@
+.btn-mode {
+	color: #ffffff;
+	background-color: #2E2D4D;
+	border-color: #2E2D4D;
+}
+.btn-mode:hover,
+.btn-mode:focus, btn-mode:active,
+.btn-mode.active,
+.open .dropdown-toggle.btn-mode {
+	color: #ffffff;
+	background-color: #575670;
+	border-color: #2E2D4D;
+}
+.btn-mode:active,
+.btn-mode.active,
+.open .dropdown-toggle.btn-mode {
+	background-image: none;
+}
+.btn-mode.disabled,
+.btn-mode[disabled],
+fieldset[disabled] .btn-mode,
+.btn-mode.disabled:hover, .btn-mode[disabled]:hover,
+fieldset[disabled] .btn-mode:hover,
+.btn-mode.disabled:focus,
+.btn-mode[disabled]:focus,
+fieldset[disabled] .btn-mode:focus,
+.btnmode.disabled:active,
+.btn-mode[disabled]:active,
+fieldset[disabled] .btn-mode:active,
+.btn-mode.disabled.active,
+.btn-mode[disabled].active,
+fieldset[disabled] .btn-mode.active {
+	background-color: #2E2D4D;
+	border-color: #2E2D4D;
+}
+.btn-mode .badge {
+	color: #2E2D4D;
+	background-color: #ffffff;
+}
